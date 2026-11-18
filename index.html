@@ -1,34 +1,83 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Radar Acelen | Larco</title>
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071522"><title>Radar Acelen | Larco</title>
 <style>
-:root{--bg:#0b1525;--p:#142137;--l:#2a3d5a;--t:#f1f6ff;--m:#a8bad3;--b:#58a6ff;--g:#39d39a;--a:#ffc45c}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#08111f,#101d32);color:var(--t);font:15px/1.5 Arial,sans-serif}main{max-width:1120px;margin:auto;padding:26px 18px 48px}
-.top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}h1{font-size:clamp(25px,4vw,38px);margin:0}.sub,.hint,footer{color:var(--m)}.sub{margin-top:5px}.tag{border:1px solid #8b682d;color:#ffd27a;background:#3b2c14;padding:7px 11px;border-radius:30px;font-size:12px;font-weight:bold}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px;margin-top:22px}.card{background:rgba(20,33,55,.96);border:1px solid var(--l);border-radius:15px;padding:18px;box-shadow:0 10px 30px #0003}
-h2{font-size:17px;margin:0 0 12px}.product{font-size:13px;color:var(--m);letter-spacing:.08em}.range{font-size:25px;font-weight:700;margin:8px 0}.hint{font-size:13px}.pill{display:inline-block;border-radius:20px;padding:4px 9px;font-size:12px;background:#183b35;color:#8de2bf}
-table{width:100%;border-collapse:collapse;margin-top:8px;min-width:700px}td,th{text-align:left;padding:10px 7px;border-bottom:1px solid var(--l);vertical-align:top}th{font-size:12px;color:var(--m)}.scroll{overflow-x:auto}
-.note{border-left:3px solid var(--a);padding:10px 13px;background:#2a2418;border-radius:5px;color:#f7dfae;margin-top:18px}.section{margin-top:26px}.source{color:#8fc4ff;text-decoration:none}.source:hover{text-decoration:underline}.value{font-weight:700;color:var(--g)}.pending{color:var(--a);font-weight:700}footer{font-size:12px;margin-top:22px}
-</style></head><body><main>
-<div class="top"><div><h1>RADAR ACELEN <span style="color:var(--b)">| LARCO</span></h1><div class="sub">Inteligência de mercado · Referência de atualização: 18/11/2026 · Preços oficiais publicados consultados</div></div><div class="tag">PROJEÇÃO EXPERIMENTAL · BAIXA CONFIANÇA</div></div>
-<div class="grid">
-<section class="card"><div class="product">GASOLINA A</div><div class="range">−R$ 0,02 a +R$ 0,03/L</div><span class="pill">Viés de estabilidade</span><p class="hint">Faixa experimental anterior. Não representa cotação oficial atualizada.</p></section>
-<section class="card"><div class="product">DIESEL S10</div><div class="range">−R$ 0,03 a +R$ 0,04/L</div><span class="pill">Viés de estabilidade</span><p class="hint">Faixa experimental anterior. Não representa cotação oficial atualizada.</p></section>
-<section class="card"><div class="product">DIESEL S500</div><div class="range">−R$ 0,02 a +R$ 0,04/L</div><span class="pill">Viés de estabilidade</span><p class="hint">Faixa experimental anterior. Não representa cotação oficial atualizada.</p></section></div>
+:root{--bg:#071522;--panel:#102638;--line:#23445a;--text:#edf5f8;--muted:#9fb4c1;--cyan:#38c6d9;--green:#52d6a0;--amber:#ffc66d}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#06121e,#0a1d2b 55%,#071522);color:var(--text);font:15px/1.5 Arial,sans-serif}.wrap{max-width:1180px;margin:auto;padding:28px 20px 50px}header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:22px}.kicker{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(28px,4vw,42px);margin:5px 0}.sub,.intro{color:var(--muted)}.date,.panel,.card{border:1px solid var(--line);background:#0c2030;border-radius:14px;padding:14px}.notice{border:1px solid #80602d;background:#2b2418;color:#ffe0a6;padding:13px 16px;border-radius:12px;margin:18px 0 22px}h2{font-size:19px;margin:28px 0 12px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0 22px}.card{padding:18px;min-height:125px}.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}.value{font-size:25px;font-weight:700;margin:8px 0 3px}.small,.note{font-size:12px;color:var(--muted)}.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#0c2030}table{width:100%;border-collapse:collapse;min-width:720px}th,td{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line)}th{font-size:12px;text-transform:uppercase;color:#a9c1ce;background:#102638}tr:last-child td{border-bottom:0}.product{font-weight:700}.pending{color:var(--amber);font-weight:700}.confirmed{color:var(--green);font-weight:700}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel h3{margin:0 0 9px;font-size:15px}.panel p{margin:0;color:var(--muted);font-size:13px}ul{padding-left:19px;color:var(--muted);margin:9px 0 0}li{margin:5px 0}a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}@media(max-width:760px){header{display:block}.date{display:inline-block;margin-top:14px}.cards,.grid2{grid-template-columns:1fr}.wrap{padding:20px 13px 36px}}
+</style></head><body><div class="wrap">
+<header><div><div class="kicker">Inteligência de mercado • Larco Petróleo</div><h1>Radar Acelen | Larco</h1><p class="sub">Comparativo de preços de refinaria para distribuidoras</p></div><div class="date">Atualização da leitura: <strong>18/11/2026</strong></div></header>
+<div class="notice"><strong>Transparência dos dados:</strong> o painel separa preços oficialmente confirmados de informações pendentes de validação. Nenhum valor ausente foi estimado ou substituído por preço de bomba, média de mercado ou preço com tributos.</div>
 
-<section class="card section"><h2>Comparativo de custo — Produto A | Acelen × Petrobras</h2>
-<p class="hint">Preços às distribuidoras, sem tributos, à vista, R$/L. Acelen: Candeias/BA, modalidade EXA. Petrobras: média dos pontos de entrega conforme metodologia ANP. Diferenças só são calculadas quando os valores e períodos comparáveis estão disponíveis.</p>
-<div class="scroll"><table><thead><tr><th>Produto A</th><th>Acelen Candeias</th><th>Petrobras média</th><th>Diferença Acelen − Petrobras</th><th>Menor custo</th><th>Vigência/base</th></tr></thead><tbody>
-<tr><td>Gasolina A</td><td class="pending">Tabela oficial a validar</td><td class="pending">Média oficial a extrair</td><td>—</td><td>—</td><td>Sem par comparável confirmado</td></tr>
-<tr><td>Diesel S10 A</td><td class="value">R$ 6,5876/L</td><td class="pending">Média oficial a extrair</td><td>—</td><td>—</td><td>12/11/2026 · Acelen Candeias EXA</td></tr>
-<tr><td>Diesel S500 A</td><td class="pending">Tabela oficial a validar</td><td class="pending">Média oficial a extrair</td><td>—</td><td>—</td><td>Sem par comparável confirmado</td></tr>
+
+
+
+<h2>Projeção de preços Acelen — tendência em R$/L</h2>
+<p class="intro">Estimativa indicativa para a próxima movimentação. O valor mostra a possível variação no preço de refinaria por litro — não é preço final nem anúncio oficial da Acelen.</p>
+<div class="grid2">
+ <div class="panel">
+  <h3>Gasolina A</h3>
+  <div class="value" style="color:#52d6a0">↓ Redução de R$ 0,01 a R$ 0,02/L</div>
+  <p>Equivale a 1 a 2 centavos por litro. O recuo do petróleo favorece queda, mas o dólar mais alto limita o espaço para redução.</p>
+ </div>
+ <div class="panel">
+  <h3>Diesel A S10</h3>
+  <div class="value" style="color:#ffc66d">↑ Alta de R$ 0,02 a R$ 0,05/L</div>
+  <p>Equivale a 2 a 5 centavos por litro. O fim da subvenção adicional ao diesel importado eleva o custo de reposição e pode sustentar reajustes.</p>
+ </div>
+ <div class="panel">
+  <h3>Diesel A S500</h3>
+  <div class="value" style="color:#ffc66d">↑ Alta de R$ 0,02 a R$ 0,05/L</div>
+  <p>Equivale a 2 a 5 centavos por litro. O custo de reposição do diesel e o câmbio pressionado compensam parte do alívio do petróleo.</p>
+ </div>
+ <div class="panel">
+  <h3>Resumo da projeção</h3>
+  <div class="value">Gasolina ↓ | Diesel ↑</div>
+  <p>Viés de leve redução para gasolina e pressão de alta para os dois tipos de diesel. A intensidade dependerá do câmbio, dos derivados internacionais e da política comercial da Acelen.</p>
+ </div>
+</div>
+<p class="note">Faixas estimadas para acompanhamento comercial, com confiança baixa a moderada. Não representam previsão oficial da Acelen. O impacto de R$ 0,42/L citado no mercado refere-se à estimativa de aumento do custo do diesel importado após o fim da subvenção; não deve ser interpretado como reajuste esperado da refinaria.</p>
+
+<h2>Indicadores macroeconômicos</h2>
+<p class="intro">Fotografia de mercado de 18/11/2026. As cotações de petróleo são referências intradiárias divulgadas pela Reuters; podem variar durante o pregão.</p>
+<div class="cards">
+ <div class="card"><div class="label">Dólar comercial — PTAX venda</div><div class="value">R$ 5,8102</div><div class="small">Fechamento de 18/11 • Banco Central</div></div>
+ <div class="card"><div class="label">Petróleo Brent</div><div class="value">US$ 92,02</div><div class="small">US$/barril • queda de 1,2% na referência intradiária</div></div>
+ <div class="card"><div class="label">Petróleo WTI</div><div class="value">US$ 84,38</div><div class="small">US$/barril • queda de 1,9% na referência intradiária</div></div>
+</div>
+<div class="notice"><strong>Impacto para a formação de preços:</strong> petróleo em baixa favorece redução do custo de reposição, mas a alta do dólar encarece o produto importado em reais. A combinação dos dois fatores reduz a força do sinal de queda.</div>
+
+<h2>Radar de mercado — fatos que podem mexer com os combustíveis</h2>
+<div class="grid2">
+ <div class="panel">
+  <h3>Tributos — gasolina e etanol</h3>
+  <p>O governo prorrogou até <strong>09/12/2026</strong> a desoneração de PIS/Pasep, Cofins e Cide sobre gasolina e de PIS/Pasep e Cofins sobre etanol hidratado. Portanto, não houve retorno em 10/11. A próxima data de atenção é <strong>10/12</strong>, caso não haja nova prorrogação.</p>
+  <p style="margin-top:8px">Na gasolina A, a desoneração federal representa R$ 0,89/L em relação às alíquotas de fevereiro de 2026.</p>
+ </div>
+ <div class="panel">
+  <h3>Oriente Médio — risco geopolítico</h3>
+  <p>O conflito entre EUA e Irã e os ataques a embarcações no Estreito de Ormuz mantêm risco sobre rotas de petróleo. Qualquer interrupção efetiva pode elevar frete, seguro e preço internacional dos derivados.</p>
+ </div>
+ <div class="panel">
+  <h3>Estoques dos Estados Unidos</h3>
+  <p>Na semana encerrada em 13/11, os estoques americanos subiram: petróleo +3,4 milhões de barris; gasolina +5,2 milhões; destilados +1,6 milhão. O aumento reforça a expectativa de oferta mais confortável e pressionou Brent e WTI para baixo.</p>
+ </div>
+ <div class="panel">
+  <h3>Diesel — reposição e importação</h3>
+  <p>O mercado segue atento ao custo de importação, ao câmbio e ao encerramento de subsídios adicionais a importadores. Mesmo com petróleo em queda, esses fatores podem sustentar o preço do diesel no mercado interno.</p>
+ </div>
+</div>
+<p class="note">Fontes da leitura: <a href="https://ptax.bcb.gov.br/ptax_internet/consultarUltimaCotacaoDolar.do" target="_blank" rel="noopener">Banco Central — PTAX</a> • <a href="https://www.reuters.com/business/energy/oil-prices-fall-higher-us-crude-stocks-temper-supply-risks-2026-11-18/" target="_blank" rel="noopener">Reuters — petróleo, estoques e tensão no Oriente Médio</a> • <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/governo-federal-prorroga-ate-9-de-dezembro-a-desoneracao-da-gasolina-e-do-etanol/" target="_blank" rel="noopener">Ministério da Fazenda — prorrogação da desoneração</a> • <a href="https://www.federacaobrasilcom.org.br/informe-platts/" target="_blank" rel="noopener">Informe Platts — mercado de diesel</a>.</p>
+
+<h2>Comparativo direto — custo por litro</h2>
+<p class="intro">Escopo: Gasolina A, Diesel A S10 e Diesel A S500. Considerar somente preço de venda da refinaria à distribuidora, sem tributos, à vista e por ponto/modalidade de entrega. Diferenças e percentuais só serão calculados quando houver valores equivalentes e confirmados dos dois fornecedores.</p>
+<div class="cards">
+<div class="card"><div class="label">Produtos no radar</div><div class="value">03</div><div class="small">Gasolina A • Diesel A S10 • Diesel A S500</div></div>
+<div class="card"><div class="label">Preço Acelen validado nesta versão</div><div class="value">S10</div><div class="small">Tabela oficial com vigência em 12/11/2026</div></div>
+<div class="card"><div class="label">Comparação Acelen × Petrobras</div><div class="value">Em validação</div><div class="small">Não calcular diferença sem mesma base comercial</div></div></div>
+<div class="tablebox"><table><thead><tr><th>Produto</th><th>Acelen</th><th>Petrobras</th><th>Diferença</th><th>Situação</th></tr></thead><tbody>
+<tr><td class="product">Gasolina A</td><td class="pending">Pendente — tabela oficial detalhada</td><td class="pending">Pendente — preço por ponto/modalidade</td><td>—</td><td class="pending">Aguardando validação</td></tr>
+<tr><td class="product">Diesel A S10</td><td class="confirmed">Candeias: R$ 6,5876/L</td><td class="pending">Pendente — preço por ponto/modalidade</td><td>—</td><td class="confirmed">Acelen confirmado</td></tr>
+<tr><td class="product">Diesel A S500</td><td class="pending">Pendente — tabela oficial detalhada</td><td class="pending">Pendente — preço por ponto/modalidade</td><td>—</td><td class="pending">Aguardando validação</td></tr>
 </tbody></table></div>
-<div class="note"><b>Transparência:</b> foi possível confirmar nesta consulta a linha oficial de Diesel S10 A da Acelen em Candeias: R$ 6.587,60/m³ = R$ 6,5876/L, vigência 12/11/2026. Ainda não há, nesta versão, valores oficiais pareados da Petrobras e as linhas completas de Gasolina A e S500. Por isso não calculamos diferenças nem declaramos vencedor.</div>
-</section>
-<section class="card section"><h2>Histórico de preços — Produto A</h2><p class="hint">O gráfico comparativo será traçado quando houver séries oficiais pareadas para os mesmos produtos e períodos.</p><div style="height:115px;border:1px dashed #49617f;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--m);padding:16px">Séries históricas comparáveis ainda não consolidadas.</div></section>
-<div class="grid">
-<section class="card"><h2>Referência oficial Acelen — Diesel S10</h2><div class="range">R$ 6,5876/L</div><p class="hint">Candeias (BA) · EXA · 12/11/2026 · preço sem tributos, à vista.</p><p><a class="source" href="https://www.acelen.com.br/precos-as-distribuidoras/?ano=2026&mes=11&produto=7" target="_blank" rel="noopener">Consultar tabela oficial Acelen ↗</a></p></section>
-<section class="card"><h2>Fonte Petrobras e metodologia</h2><p class="hint">A Petrobras disponibiliza histórico de preços às distribuidoras sem tributos, à vista, por local e modalidade. A síntese semanal da ANP explica a média de pontos selecionados usada como referência.</p><p><a class="source" href="https://precos.petrobras.com.br/" target="_blank" rel="noopener">Consultar preços oficiais Petrobras ↗</a></p><p><a class="source" href="https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arq-sintese-semanal/2026/sintese-precos-46-pdf" target="_blank" rel="noopener">Consultar metodologia ANP ↗</a></p></section></div>
-<div class="note"><b>Importante:</b> esta página é uma publicação estática. O link permanece, mas os dados não se atualizam sozinhos. Para automatizar a atualização diária será necessário conectar as fontes oficiais e configurar uma rotina de coleta/publicação.</div>
-<footer>Radar Acelen | Larco · Valores em R$/L · Produto A sem mistura. Fontes consultadas: Acelen, Petrobras e ANP. Atualização desta versão: 18/11/2026.</footer>
-</main></body></html>
+<p class="note">A tabela Acelen informa valores em R$/m³; R$ 6,5876/L equivale a R$ 6.587,6000/m³. Referência: Candeias (BA), modalidade EXA, vigência 12/11/2026, sem tributos e à vista. Não foi aplicado desconto de subvenção.</p>
+<footer><strong>Radar Acelen | Larco</strong> • Material de acompanhamento comercial.<br>Última revisão desta versão: 18/11/2026. Atualização manual: o painel não se atualiza automaticamente. Para publicar alterações, substituir o arquivo index.html no repositório GitHub e concluir o commit.</footer>
+</div></body></html>
